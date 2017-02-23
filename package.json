@@ -1,12 +1,12 @@
 {
-  "name": "project-template",
-  "version": "0.0.0",
+  "name": "carousel-test",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "webpack-watch": "webpack -w",
     "express-server": "DEBUG=project-template:* nodemon ./bin/www",
-    "dev": "concurrent --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
+    "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
     "test": "mocha --require ignore-styles -w public/javascripts/src/test/browser.js public/javascripts/src/test/*.spec.js"
   },
   "dependencies": {
@@ -28,6 +28,7 @@
     "moment": "^2.17.1",
     "morgan": "~1.7.0",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
     "serve-favicon": "~2.3.0",
     "webpack": "^1.14.0"

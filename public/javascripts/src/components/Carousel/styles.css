@@ -1,0 +1,33 @@
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+}
+
+.indicator-list {
+  text-align: center;
+  margin: 10px auto;
+  position: absolute;
+  bottom: 0;
+  list-style: none;
+  transform: translatex(-50%);
+  left: 50%;
+}
+
+.indicator-bubble {
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: 5px;
+  float: left;
+  border: 2px solid transparent;
+}
+
+.indicator-selected {
+  background: rgba(0, 0, 0, 0.5);
+}

@@ -1,16 +1,23 @@
-html, body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-  background: #2C2946;
+
+
+.example-enter {
+  opacity: 0.01;
+  width: 0px;
 }
 
-#root{
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
+.example-enter.example-enter-active {
+  opacity: 1;
+  width: 100px;
+  transition: 700ms;
+}
+
+.example-leave {
+  opacity: 1;
+  width: 100px;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  width: 0px;
+  transition: 700ms;
 }
